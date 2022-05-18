@@ -1,0 +1,183 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  font-size: 30px;
+  text-align: center;
+  /* font-family: "Century Gothic"; */
+  /* font-family: "Droid Sans Mono"; */
+  font-family: "Fira Mono";
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  /* overflow: hidden; */
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 10px;
+
+  font-size: 40px;
+}
+
+#updateLightContainer {
+  display: flex;
+
+  align-items: center;
+}
+
+.updateLight {
+  width: 10px;
+  height: 10px;
+
+  margin: 3px;
+
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.updateLight.off {
+  /* background-color: red; */
+  background-color: #4242ee;
+}
+
+.updateLight.on {
+  /* background-color: green; */
+  background-color: #d232d2;
+}
+
+/*
+.departures {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  white-space: pre;
+
+  font-size: 20px;
+}
+*/
+
+#departuresContainer {
+  display: flex;
+
+  /* overflow: scroll; */
+}
+
+.departures {
+  width: 50%;
+}
+
+table {
+  border: 1px solid white;
+  border-top-width: 3px;
+}
+
+thead {
+  /* text-decoration: underline; */
+}
+
+thead td {
+  border-bottom: 1px solid white;
+}
+
+tbody td {
+  padding: 5px 0px 2px 0px;
+}
+
+.name {
+  padding: 0px 5px;
+
+  border: 3px solid #4242ee;
+  border-radius: 10px;
+
+  font-size: 23px;
+
+  position: relative;
+    top: -3.5px;
+}
+
+.name[data-name*="88"], .name[data-name*="972"] {
+  /* border-color: fuchsia; */
+  border-color: #d232d2;
+}
+
+/* .relativeTime {
+  font-size: 20px;
+  color: gray;
+} */
+
+.relativeTime span {
+  display: inline-block;
+  height: 33px;
+}
+
+.absoluteTime {
+  font-size: 15px;
+  color: lightgray;
+  white-space: pre;
+}
+
+.live span {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid white;
+  /* padding-bottom: 0px; */
+}
+
+.live.gone span {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid gray;
+  /* padding-bottom: 0px; */
+}
+
+.gone {
+  color: gray;
+}
+
+.delay-display {
+  width: 30px;
+  /* padding: 0px; */
+  position: relative;
+    top: -13px;
+    left: 5px;
+}
+
+.delay-container {
+  /* height: 42px; */
+}
+
+.delay-marker, .delay-indicator {
+  height: 5px;
+  line-height: 5px;
+}
+
+.bright {
+  /* color: white; */
+  color: c5c5c5;
+}
+
+.dim {
+  color: gray;
+}
+
+.delay-indicator {
+  position: absolute;
+    left: -6px;
+
+  font-size: 25px;
+}

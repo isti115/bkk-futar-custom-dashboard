@@ -1,0 +1,15 @@
+{
+  "name": "Remote Dash v1.4.1",
+  "description": "WebSocket controlled dashboard",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/fullscreen-128.png"
+  },
+  "developer": {
+    "name": "Isti115",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en",
+  "orientation": "landscape",
+  "fullscreen": "true"
+}

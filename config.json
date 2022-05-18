@@ -1,0 +1,9 @@
+{
+  "PORT": 8080,
+  "WEATHER_API_KEY": "********************************",
+  "WEATHER_LOCATION": "Budapest,hu",
+  "LEFT_TEXT": "West",
+  "LEFT_STOP": "BKK_F?????",
+  "RIGHT_TEXT": "East",
+  "RIGHT_STOP": "BKK_F?????"
+}
