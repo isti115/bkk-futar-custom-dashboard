@@ -8,7 +8,6 @@ const makeGetParameters = getParameters => (
 )
 
 const makeRequest = (apiPath, apiFunction, getParameters) => {
-  // console.log(`${apiPath}/${apiFunction}?${makeGetParameters(getParameters)}`)
   return new Promise((resolve, reject) => {
     request(
       `${apiPath}/${apiFunction}?${makeGetParameters(getParameters)}`,
