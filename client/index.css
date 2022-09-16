@@ -75,6 +75,7 @@ body {
 
 #departuresContainer {
   display: flex;
+  align-items: flex-start;
 
   /* overflow: scroll; */
 }
@@ -92,12 +93,16 @@ thead {
   /* text-decoration: underline; */
 }
 
+tr {
+  height: 42px;
+}
+
 thead td {
   border-bottom: 1px solid white;
 }
 
 tbody td {
-  padding: 5px 0px 2px 0px;
+  /* padding: 5px 0px 2px 0px; */
 }
 
 .name {
@@ -109,7 +114,7 @@ tbody td {
   font-size: 23px;
 
   position: relative;
-    top: -3.5px;
+    top: -1.5px;
 }
 
 .name[data-name*="88"], .name[data-name*="972"] {
@@ -153,7 +158,7 @@ tbody td {
   width: 30px;
   /* padding: 0px; */
   position: relative;
-    top: -13px;
+    /* top: -13px; */
     left: 5px;
 }
 
@@ -168,7 +173,7 @@ tbody td {
 
 .bright {
   /* color: white; */
-  color: c5c5c5;
+  color: #c5c5c5;
 }
 
 .dim {

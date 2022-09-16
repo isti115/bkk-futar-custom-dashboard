@@ -13,12 +13,12 @@ ${`${date.getSeconds()}`.padStart(2, '0')}
 const delaySteps = [1000, 300, 120, 60, -60, -120, -300, -1000]
 
 const makeDelayStep = (from, to, delay) => /* html */ `
-  <div class="delay-marker ${delay <= from && delay >= to ? 'bright' : 'dim'}">_</div>
+  <div class="delay-marker ${delay <= from && delay >= to ? 'bright' : 'dim'}">–</div>
 `
 
 // top: ${20 + (delay === 0 ? 0 : (Math.sign(delay) * Math.log2(Math.abs(delay / 60))))}px;
 const makeIndicatorStyle = delay => `
-  top: ${35 + delay / 60 * 2.5}px;
+  top: ${22 + delay / 60 * 2.5}px;
   color: ${delay < 0 ? '#d232d2' : (delay > 0 ? '#4242ee' : 'white')};
 `
 

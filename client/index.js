@@ -3,7 +3,7 @@
 window.addEventListener('load', () => {
   document.body.addEventListener('click', () => {
     // window.location.reload()
-    window.alert('installing')
+    // window.alert('installing')
     document.body.requestFullscreen()
     // navigator.mozApps.install(window.location.href + 'manifest.webapp.json')
   })
